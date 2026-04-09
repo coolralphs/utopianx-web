@@ -219,6 +219,61 @@ body {
 .social-btn.facebook  { background: #3b5998; }
 .social-btn.threads   { background: #000000; }
 
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1a1a2e;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* default mobile stack */
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #1a1a2e;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #4e54c8; /* blue accent matching your buttons */
+  margin-bottom: 15px;
+}
+
+/* Two-column layout for medium+ screens */
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Footer */
 footer {
   text-align: center;
