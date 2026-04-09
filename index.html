@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UtopianX</title>
+  <!-- Font Awesome -->
   <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
   />
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,10 +15,10 @@
   <header class="hero">
     <img src="IMG_0622.png" alt="UtopianX Logo" class="logo">
     <p>We bring your ideas to life, one app at a time.</p>
-    <a href="#signup" class="cta-btn">Get Started</a>
+    <a href="#connect" class="cta-btn">Contact Us</a>
   </header>
 
-  <!-- About & Contact Section -->
+  <!-- About & Connect Section -->
   <section class="about-contact">
     <div class="about">
       <h2>Who We Are</h2>
@@ -28,13 +29,36 @@
       </p>
     </div>
   
-     <div class="contact" id="connect">
+    <div class="contact" id="connect">
       <h2>Connect With Us</h2>
       <p>Follow, chat, or share your ideas with us on social media!</p>
       <div class="social-buttons">
         <a href="https://www.instagram.com/utopian.x" target="_blank" class="social-btn instagram">
           <i class="fab fa-instagram social-icon"></i> Instagram
         </a>
+        <a href="https://www.facebook.com/utopianxcom" target="_blank" class="social-btn facebook">
+          <i class="fab fa-facebook-f social-icon"></i> Facebook
+        </a>
+        <a href="https://www.threads.net/utopian.x" target="_blank" class="social-btn threads">
+          <i class="fab fa-threads social-icon"></i> Threads
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 UtopianX. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional JS for smooth scrolling if needed for older browsers -->
+  <script>
+    document.querySelector('.cta-btn').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('#connect').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>        </a>
         <a href="https://www.facebook.com/utopianxcom" target="_blank" class="social-btn facebook">
           <i class="fab fa-facebook-f social-icon"></i> Facebook
         </a>
